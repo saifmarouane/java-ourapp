@@ -1,0 +1,33 @@
+package com.example.ourapp.saif.saif;
+
+import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
+import javafx.stage.StageStyle;
+
+import java.io.IOException;
+
+public class Register extends Application {
+    @Override
+    public void start(Stage stage) throws IOException {
+        try {
+            FXMLLoader fxmlLoader = new FXMLLoader(Register.class.getResource("register.fxml"));
+            Scene scene = new Scene(fxmlLoader.load(), 920, 720);
+            stage.setTitle("Hello!");
+            stage.setScene(scene);
+            stage.setWidth(920);
+            stage.setHeight(720);
+            stage.initStyle(StageStyle.UNDECORATED);
+            stage.show();
+
+        } catch (Exception e) {
+            e.printStackTrace();
+            e.getCause();
+        }
+    }
+
+    public static void main(String[] args) {
+        launch();
+    }
+}

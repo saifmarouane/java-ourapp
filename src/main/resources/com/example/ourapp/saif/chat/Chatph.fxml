@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="690.0"
+            prefWidth="937.0" styleClass="anchore" stylesheets="@style1.css" xmlns="http://javafx.com/javafx/17"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ourapp.saif.chat.ChatphController">
+    <children>
+        <Pane layoutY="1.0" prefHeight="690.0" prefWidth="262.0" styleClass="pane" stylesheets="@style1.css">
+            <children>
+                <Label layoutX="5.0" layoutY="239.0" text="ROBOT PHYSIQUE" textFill="WHITE">
+                    <font>
+                        <Font name="MV Boli" size="28.0"/>
+                    </font>
+                </Label>
+                <ImageView fitHeight="185.0" fitWidth="179.0" layoutX="39.0" layoutY="24.0" pickOnBounds="true"
+                           preserveRatio="true">
+                    <image>
+                        <Image url="@Robot 1.png"/>
+                    </image>
+                </ImageView>
+            </children>
+        </Pane>
+        <Pane layoutX="262.0" layoutY="-1.0" prefHeight="61.0" prefWidth="676.0" style="-fx-background-color: #5a857c;">
+            <children>
+                <Label layoutX="22.0" layoutY="19.0" text="ROBOT PHYSIQUE" textFill="WHITE">
+                    <font>
+                        <Font name="Ebrima Bold" size="18.0"/>
+                    </font>
+                </Label>
+                <Circle fill="DODGERBLUE" layoutX="199.0" layoutY="31.0" radius="4.0" stroke="BLACK"
+                        strokeType="INSIDE"/>
+                <Label layoutX="210.0" layoutY="11.0" text="en ligne">
+                    <font>
+                        <Font name="MV Boli" size="18.0"/>
+                    </font>
+                </Label>
+                <ImageView fitHeight="61.0" fitWidth="51.0" layoutX="625.0" layoutY="6.0" pickOnBounds="true"
+                           preserveRatio="true">
+                    <image>
+                        <Image url="@exit.png"/>
+                    </image>
+                </ImageView>
+            </children>
+        </Pane>
+        <ScrollPane layoutX="262.0" layoutY="60.0" prefHeight="572.0" prefWidth="676.0" styleClass="anchore"
+                    stylesheets="@style1.css">
+            <content>
+                <Pane prefHeight="571.0" prefWidth="674.0" styleClass="anchore" stylesheets="@style1.css">
+                    <children>
+
+                        <ImageView fitHeight="45.0" fitWidth="53.0" layoutX="21.0" layoutY="35.0" pickOnBounds="true"
+                                   preserveRatio="true">
+                            <image>
+                                <Image url="@Robot 1.png"/>
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="45.0" fitWidth="53.0" layoutX="615.0" layoutY="79.0" pickOnBounds="true"
+                                   preserveRatio="true">
+                            <image>
+                                <Image url="@moi.png"/>
+                            </image>
+                        </ImageView>
+                        <TextField layoutX="74.0" layoutY="44.0" styleClass="txt" stylesheets="@style1.css"
+                                   text="Bonjour  :)"/>
+                        <TextField layoutX="445.0" layoutY="99.0" styleClass="txtf" stylesheets="@style1.css"
+                                   text="Salut !"/>
+                    </children>
+                </Pane>
+            </content>
+        </ScrollPane>
+        <Pane layoutX="263.0" layoutY="632.0" prefHeight="61.0" prefWidth="676.0">
+            <children>
+                <TextField layoutX="103.0" layoutY="8.0" opacity="0.99" prefHeight="25.0" prefWidth="451.0"
+                           styleClass="texte" text="Entrer votre texte ">
+                    <font>
+                        <Font size="16.0"/>
+                    </font>
+                </TextField>
+                <Button layoutX="579.0" layoutY="8.0" mnemonicParsing="false" styleClass="but" text="Envoyer"/>
+
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>
